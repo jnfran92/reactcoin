@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.png';
 import './App.css';
-import {Badge, Col, Container, Nav, Navbar, Row} from "react-bootstrap";
+import {Badge, Col, Container, Navbar, Row} from "react-bootstrap";
 
 function getRender(name: String) {
     return (
         <Container fluid>
-            <Navbar bg="light" variant="light" fixed="top">
+            <Navbar bg="dark" variant="dark" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home">ReactCoin</Navbar.Brand>
                 </Container>
