@@ -16,11 +16,15 @@ function getRender(name: String) {
 }
 
 type AppProps = {
-    oneThing: String;
-    other: String;
+    oneThing: string;
+    other: string;
 }
 
-class App extends React.Component<AppProps> {
+type AppStates = {
+    stateOne: string
+}
+
+class App extends React.Component<AppProps, AppStates> {
 
     componentDidMount() {
     }
