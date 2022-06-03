@@ -1,17 +1,21 @@
 import React from 'react';
 import logo from './logo.png';
 import './App.css';
+import {Badge, Col, Container, Row} from "react-bootstrap";
 
 function getRender(name: String) {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <h1>Reactcoin</h1>
-                <h2>Crypto matters!</h2>
-                <h3>hello: {name}</h3>
-            </header>
-        </div>
+        <Container fluid>
+            <Row>
+                <Col>
+                    <img src={logo} className="App-logo" alt="logo"/>
+                    <h1>Reactcoin</h1>
+                    <h2>Crypto matters!</h2>
+                    <h3>hello: {name}</h3>
+                    <Badge bg="primary">Crypto</Badge> <Badge bg="secondary">TypeScript</Badge>{' '}
+                </Col>
+            </Row>
+        </Container>
         )
 }
 
