@@ -2,19 +2,35 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 
-const data = (
-    <div className="App">
-        <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1>Reactcoin</h1>
-            <h2>Crypto matters!</h2>
-        </header>
-    </div>
-);
+function getData(name: String) {
+    return (
+        <div className="App">
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo"/>
+                <h1>Reactcoin</h1>
+                <h2>Crypto matters!</h2>
+                <h3>name: {name}</h3>
+            </header>
+        </div>
+        )
+}
 
-class App extends React.Component {
+type AppProps = {
+    oneThing: String;
+    other: String;
+}
+
+class App extends React.Component<AppProps> {
+
+    componentDidMount() {
+    }
+
+    componentWillUnmount() {
+    }
+
+
     render() {
-        return data;
+        return getData(this.props.oneThing);
     }
 }
 
