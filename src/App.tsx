@@ -31,7 +31,7 @@ function getAlbum() {
                 <Toolbar>
                     <CameraIcon sx={{ mr: 2 }} />
                     <Typography variant="h6" color="inherit" noWrap>
-                        Album layout
+                        ReactCoin
                     </Typography>
                 </Toolbar>
             </AppBar>
